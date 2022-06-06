@@ -1,3 +1,3 @@
 # practice
 
- "Hello world"-----git
+ "Repository for python programs"
