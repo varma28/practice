@@ -1,11 +1,19 @@
-stre1 = input()
+import sys
 
-strnew = stre1[-1:-1*(len(stre1)+1):-1]
+# total arguments
+n = len(sys.argv)
+print("Total arguments passed:", n)
 
-#strnew = stre1[::-1]
+print("\nName of Python script:", sys.argv[0])
 
-print("The reverse of the string is",strnew)
-
-
-
+print("\nArguments passed:", end = " ")
+for i in range(1, n):
+	print(sys.argv[i], end = " ")
+	
+Sum = 0
+# Using argparse module
+for i in range(1, n):
+	Sum += int(sys.argv[i])
+	
+print("\n\nResult:", Sum)
 
