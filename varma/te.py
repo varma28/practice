@@ -158,7 +158,7 @@ print(next(l1))
 print(next(l1))
 print(next(l1))
 print(next(l1))
-print(next(l1))'''
+print(next(l1))
 
 
 class b1:
@@ -174,6 +174,50 @@ n1 = b1(1)
 n2 = b1(1)
 n1+n2
 
+__num1__ = input("Enter number: ")
+print(__num1__)
+num =25
+num1 = 67
+a =25 if num>num1 else 7
+print(a)
+
+varma = 'sesha'
+
+Rupa = 'varma'
+
+sesha = 'Rupa'  
+
+# Python Function to print leaders in array
+
+def printLeaders(arr,size):
+	
+	for i in range(0, size):
+		for j in range(i+1, size):
+			if arr[i]<=arr[j]:
+				break
+		if j == size-1: # If loop didn't break
+			print(arr[i],end = " ")
+
+# Driver function
+arr=[16, 17, 4, 3, 5, 2]
+printLeaders(arr, len(arr))
+
+
+
+l1 = {}
+l2 = set()
+print(type(l2))
+
+
+dict1 = {1:2,2:3,3:4}
+
+for i,j in dict1.items():
+    print(i,j)'''
+
+lst1 = [1,2,3,4,5,6]
+lst1.extend(lst1[0:3])
+lst2 = lst1[3:]
+print(lst2)
 
 
 
